@@ -1,0 +1,5 @@
+{
+  "name": "AI Neural Network Visualizer",
+  "description": "An application that visualizes the thinking process of a neural network in real-time as it responds to user prompts, showing neurons firing and signals propagating through layers.",
+  "requestFramePermissions": []
+}

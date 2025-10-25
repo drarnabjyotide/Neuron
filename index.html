@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neural Network Visualizer - AI Brain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<style>
+      body {
+        background: linear-gradient(-45deg, #0a0a0a, #1a1a2e, #0a0a0a, #2e1a2e);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        overflow-x: hidden;
+      }
+
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      .blinking-cursor::after {
+        content: '█';
+        font-weight: bold;
+        margin-left: 2px;
+        animation: blink 1s step-end infinite;
+      }
+      
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+    </style>
+</head>
+  <body class="">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
